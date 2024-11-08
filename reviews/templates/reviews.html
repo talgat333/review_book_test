@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Книга отзывов и предложений</h1>
+<div class="review-form">
+<h2>Оставить отзыв</h2>
+    <form method="POST">
+        {% csrf_token %}
+    {{ form.as_p }}
+
+ <p><input type="submit" value="Оставить отзыв"></p>
+    </form>
+</div>
+<div class="reviews">
+<h2>Все отзывы:</h2>
+{% for review in reviews %}
+<div class="review">
+<p class="user">Оставил {{ review.name }}</p>
+<p class="rating">Оценка: {{ review.rating }}/10</p>
+<p class="review-text">{{ review.review }}</p>
+ </div>
+{% endfor %}
+
+</div>
+{% endblock %}

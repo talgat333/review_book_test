@@ -1,0 +1,57 @@
+body {
+margin-left: 20%;
+margin-right: 20%;
+background-color: aliceblue;
+}
+
+h1 {
+font-weight: normal;
+border-bottom: 1px solid grey;
+}
+
+h2 {
+font-weight: normal;
+margin-bottom: 30px;
+font-size: 26px;
+}
+
+input, textarea {
+margin-bottom: 8px;
+background: blanchedalmond;
+border: 0;
+padding: 3px 18px;
+font-size: 15px;
+width: 25%;
+}
+
+input[type=submit] {
+font-weight: bold;
+background-color: cornflowerblue;
+color: cornsilk;
+padding: 8px 15px;
+font-size: 15px;
+width: auto;
+}
+
+label {
+display: block;
+font-size: 20px;
+}
+
+.review {
+border-bottom: 0.5px solid lightgrey;
+}
+
+.review-text {
+font-size: large;
+}
+
+.user {
+font-size: 15px;
+font-style: italic;
+}
+
+.rating {
+color: green;
+font-weight: bolder;
+}
